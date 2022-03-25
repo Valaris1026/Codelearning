@@ -79,7 +79,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\alfar\OneDrive\CodeLearning\Codelearning\PointerLearning\Header;$(IncludePath)</IncludePath>
+    <IncludePath>E:\Project code\Codelearning\Codelearning\PointerLearning\Header;C:\Users\alfar\OneDrive\CodeLearning\Codelearning\PointerLearning\Header;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -141,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\hello.c" />
     <ClCompile Include="..\..\PointerLearing.c" />
     <ClCompile Include="..\..\Source\function.c" />
   </ItemGroup>

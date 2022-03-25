@@ -21,6 +21,9 @@
     <ClCompile Include="..\..\Source\function.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\hello.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Header\function.h">

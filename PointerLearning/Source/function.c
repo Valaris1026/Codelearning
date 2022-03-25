@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include <function.h>
+#include <hello.h>
 
 void array_of_pointer(void)
 {
@@ -110,7 +111,7 @@ void test2(int** pp)
 {
 	printf("%d\n", **pp);
 }
-void test3(int* arr[])
+void test3(int* arr[])//arr[]-> *arr +int*->int** arr
 {
 	printf("%d\n", *arr[0]);
 }
@@ -120,7 +121,8 @@ void two_division_pointer_deliver(void)
 	int* p = &a;
 	int** pp = &p;
 	
-	test2(&p);//这里的&p 传递的是p的地址 p又指向a的地址，故而&p是二级指针，符合形参的设计
+	Zan();
+	test2(&p);//这里的&p 传递的是p的地址 p又指向a的地址，故而&p是二级指针，符合形参的设计 
 	test3(pp);//形参为int* arr[]，由于数组在形参时会降级为指针，故而这里的形参也是一个二级指针
 }
 /*函数形参为二级指针时，实参可以是二级指针(一级指针的地址)，也可以是指针数组的元素的地址(特殊的为数组名，因为它是数组首元素的地址嘛)。*/
